@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/custom.css">
+    <title>cluster-bot</title>
+</head>
+
+<body>
+    <header>
+        <h1>Cluster Bot</h1>
+    </header>
+    <main>
+    <div class="details">
+        <div class="form-header">
+            <h2>Welcome, Dear Friend.</h2>
+            <p>Enter your details to find your Hostel allocation</p>              
+        </div>
+        <form name="myForm" onsubmit="return false">
+
+            <label for="reg-num">Matric. Number</label>
+            <input type="text" name="Matric No" class="reg-num" placeholder="Enter your Matric. number" aria-describedby="Enter Maticulation or Registration Number" maxlength="12" required>
+
+            <label for="remita">School Fees RRR</label>
+            <input type="text" name="school fees rrr" class="remita" placeholder="Enter RRR for 2019/2020" aria-describedby="Enter RRR for 2019/2020 school fees" maxlength="15" required>
+    
+            <button type="submit" class="get-hostel">Get Hostel</button>
+        </form>
+    </div>
+    </main>
+
+    <footer></footer>
+
+     <!-- app JavaScript file -->
+     <script src="./src/app.js"></script>
+     <!-- axios cdn -->
+     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+</body>
+</html>

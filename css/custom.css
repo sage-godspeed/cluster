@@ -1,0 +1,119 @@
+/* css resets */
+ * {
+    padding: 0;
+    margin: 0;
+}
+/* setting up our general styling */
+body {
+    background: ghostwhite;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    letter-spacing: 0.3px;
+    line-height: 1.5;
+    margin: 10px;
+    padding: 20px;
+}
+main {
+    padding-top: 8%;
+}
+header {
+    color: blue;
+}
+/* styling our form section */
+.details {
+    margin: 0 auto;
+    padding: 25px 15px;
+    border: 1.5px skyblue solid;
+    border-radius: 7px;
+    width: 30%;
+} 
+/* styling the form header message*/
+.form-header {
+   text-align: center;
+   padding: 10px 7px;
+}
+.form-header p {
+   font-size: 14px;
+   font-style: italic;
+}  
+/* styling the form*/
+form {
+   vertical-align: middle;
+   margin: 5px 15px;
+   padding-top: 8%
+}
+/* styling the form input*/
+form > input {
+   background: ghostwhite;
+   display: block;
+   margin: 10px 0;
+   padding: 10px 15px;
+   border: 0;
+   border-bottom: 1px solid black;
+   width: 90%;
+}
+/* styling the form labels*/
+label {
+   font-size: 14px;
+   font-style: italic;
+   font-weight: bold;
+}
+/* styling our button */
+button {
+   margin-top: 15px;
+   padding: 12px 15px;
+   width: 150px;
+   border: 1px solid;
+   border-radius: 7px;
+   font-size: 14px;
+   font-weight: bold;
+   color: white;
+   background: rgb(12, 121, 211);
+   text-align: center;
+}
+button:hover {
+   cursor: pointer;
+}
+/* styling rules for ipad pro devices */
+@media (width: 1024px) {
+    main {
+        padding-top: 20%;
+        padding-bottom: 15%;
+    }
+    /* styling our form section */
+    .details {
+        padding: 20px 10px;
+        width: 45%;
+        transition: all 1s;
+    } 
+}   
+/* styling rules for ipad devices */
+@media (width: 768px) {
+    main {
+        padding-top: 20%;
+        padding-bottom: 15%;
+    }
+    /* styling our form section */
+    .details {
+        padding: 20px 10px;
+        width: 50%;
+        transition: all 1s;
+    } 
+    form > input {
+       margin: 10px 0;
+       padding: 10px;
+    }
+}
+/* styling rules for mobile devices */
+@media (max-width: 500px) {
+    main {
+        padding-top: 20%;
+        padding-bottom: 15%;
+    }
+    /* styling our form section */
+    .details {
+        padding: 20px 10px;
+        width: 90%;
+        transition: all 1s;
+    }
+}
