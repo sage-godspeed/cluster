@@ -33,10 +33,49 @@
 
     <footer></footer>
 
-     <!-- app JavaScript file -->
-     <script src="./src/app.js"></script>
-     <!-- axios cdn -->
-     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- app JavaScript code -->
+    <script>
+         // defining  our DOM variables
+    const matricNum = document.querySelector('.reg-num');
+    const remitaNum = document.querySelector('.remita');
+    const submitBtn = document.querySelector('.get-hostel');
+
+
+    // setting up our functions
+    function getHostel () {
+        
+        const regNum = matricNum.value;
+        const remitaId = remitaNum.value;
+        const agent = navigator.userAgent;
+
+
+        // const Url='https://cluster-bomb.herokuapp.com/';
+        const user = {
+            name:regNum,
+            id: remitaId
+        }
+        // axios({
+        //     method: 'post',
+        //     url: Url,
+        //     data: {
+        //         user
+        //     }
+        // })
+        // .then(data=>console.log(data))
+        // .catch(err=>console.log(err))
+        console.log(agent);
+        console.log(user);
+
+
+    }
+
+
+    // adding an event listener
+    submitBtn.addEventListener('click', getHostel);
+
+    </script>
+    <!-- axios cdn -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
 </body>
 </html>
